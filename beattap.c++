@@ -73,12 +73,12 @@ void loop() {
     judged = false;
     lastBeatTime = now;
 
-    // 🎵 랜덤 부저 리듬
+    // 랜덤 부저 리듬
     int freq = random(600, 1500);
     int dur = random(60, 180);
     tone(buzzerPin, freq, dur);
 
-    // ⬇ 노트 떨어지는 속도 랜덤 (픽셀/frame)
+    // 노트 떨어지는 속도 랜덤 (픽셀/frame)
     noteSpeed = random(1, 4);
   }
 
